@@ -43,9 +43,9 @@ local function setContains(set, key)
 end
 
 local function get_inputs()
-  if Inputs ~= nil then
-    return Inputs
-  end
+  -- if Inputs ~= nil then
+  --   return Inputs
+  -- end
   local path = vim.fn.getcwd() .."/.vscode/tasks.json"
   if not file_exists(path) then
     vim.notify(MISSING_FILE_MESSAGE, "error")
